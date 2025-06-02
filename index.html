@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Media Platform</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Top Navigation -->
+  <header class="navbar">
+    <img class="navbar_img" src="https://res.cloudinary.com/mediaxagency/image/upload/v1675658242/mediax_01_ebacdb2086.png" alt="MediaX" />
+    <nav class="nav-links">
+      <a href="#hero">Home</a>
+      <a href="#trending">Trending</a>
+      <a href="#popular">Popular</a>
+      <a href="#reviews">Reviews</a>
+    </nav>
+    <input type="checkbox" id="mode-toggle" class="mode-toggle" />
+  </header>
+
+  <!-- Hero Section -->
+  <section id="hero" class="hero">
+    <div class="hero-text">
+      <h1>MediaX</h1>
+      <p>Discover your next favorite movie or show</p>
+      <a href="#trending" class="btn">Explore Trending Movies</a>
+      <a href="#popular" class="btn">Explore Popular Shows</a>
+    </div>
+    <div class="hero-text">
+      <svg height="130" width="500">
+        <defs>
+          <linearGradient id="grad1">
+            <stop offset="0%" stop-color="yellow" />
+            <stop offset="100%" stop-color="red" />
+          </linearGradient>
+        </defs>
+        <ellipse cx="100" cy="70" rx="85" ry="55" fill="url(#grad1)" />
+        <text fill="#ffffff" font-size="45" font-family="Arial" x="50" y="86">MediaX</text>
+      </svg>
+    </div>
+  </section>
+
+  <!-- Trending Movies -->
+  <section id="trending" class="section">
+    <h2>Trending Movies</h2>
+    <p>What everyone's watching right now!</p><br><br>
+    <div class="card-container">
+      <!-- Movie 1 -->
+      <div class="card">
+        <img src="https://m.media-amazon.com/images/I/91G0gTLz6GL._AC_UF1000,1000_QL80_.jpg" alt="Movie 1" />
+        <h3>Inception</h3>
+        <p>Cobb steals information from his targets by entering their dreams. He is wanted for his alleged role in his wife's murder and his only chance at redemption is to perform a nearly impossible task.</p>
+        <span class="duration">2h 28m</span>
+        <a class="watch-btn" href="https://www.primevideo.com/dp/amzn1.dv.gti.a56a434f-4511-4e0a-88b9-72c2194f53cf?autoplay=0&ref_=atv_cf_strg_wb" target="_blank">Watch Now</a>
+        <input class="watchlist-toggle" type="checkbox">
+      </div>
+      <!-- Movie 2 -->
+      <div class="card">
+        <img src="https://m.media-amazon.com/images/M/MV5BMTQ1OTU0ODcxMV5BMl5BanBnXkFtZTcwOTMxNTUwOA@@._V1_.jpg" alt="Movie 2" />
+        <h3>Ted</h3>
+        <p>A wish comes true for John when his teddy bear, Ted, comes to life. When he plans to move in with his girlfriend, Ted, who is not prepared for the change, unintentionally ruins their relationship.</p>
+        <span class="duration">1h 46m</span>
+        <a class="watch-btn" href="https://www.zee5.com/movies/details/ted/0-0-1z5496688" target="_blank">Watch Now</a>
+        <input class="watchlist-toggle" type="checkbox">
+      </div>
+      <!-- Movie 3 -->
+      <div class="card">
+        <img src="https://m.media-amazon.com/images/M/MV5BMWY0NWE0ZjUtNjRlOS00ZDViLTgxNTQtMGMwN2FhNDY1YTg2XkEyXkFqcGc@._V1_.jpg" alt="Movie 3" />
+        <h3>King Kong</h3>
+        <p>Filmmaker Carl Denham and his crew encounter a giant ape in Skull Island and imprison it to bring it to New York. However, they land in trouble when the giant ape is set free in the city.</p>
+        <span class="duration">3h 7m</span>
+        <a class="watch-btn" href="https://www.hotstar.com/in/movies/king-kong/1971000490?utm_source=gwa" target="_blank">Watch Now</a>
+        <input class="watchlist-toggle" type="checkbox">
+      </div>
+      <!-- Movie 4 -->
+      <div class="card">
+        <img src="https://m.media-amazon.com/images/M/MV5BYzdjMDAxZGItMjI2My00ODA1LTlkNzItOWFjMDU5ZDJlYWY3XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt="Movie 4" />
+        <h3>Interstellar</h3>
+        <p>When Earth becomes uninhabitable in the future, a farmer and ex-NASA pilot, Joseph Cooper, is tasked to pilot a spacecraft, along with a team of researchers, to find a new planet for humans.</p>
+        <span class="duration">2h 49m</span>
+        <a class="watch-btn" href="https://www.primevideo.com/dp/amzn1.dv.gti.b4a9f7c6-5def-7e63-9aa7-df38a479333e?autoplay=0&ref_=atv_cf_strg_wb" target="_blank">Watch Now</a>
+        <input class="watchlist-toggle" type="checkbox">
+      </div>
+      <!-- Movie 5 -->
+      <div class="card">
+        <img src="https://m.media-amazon.com/images/M/MV5BNzY3OWQ5NDktNWQ2OC00ZjdlLThkMmItMDhhNDk3NTFiZGU4XkEyXkFqcGc@._V1_.jpg" alt="Movie 5" />
+        <h3>Joker</h3>
+        <p>Arthur Fleck, a party clown, leads an impoverished life with his ailing mother. However, when society shuns him and brands him as a freak, he decides to embrace the life of crime and chaos.</p>
+        <span class="duration">2h 2m</span>
+        <a class="watch-btn" href="https://www.primevideo.com/dp/amzn1.dv.gti.c4b6ca92-491f-bc5b-9da4-30916bb6e8a0?autoplay=0&ref_=atv_cf_strg_wb" target="_blank">Watch Now</a>
+        <input class="watchlist-toggle" type="checkbox">
+      </div>
+    </div>
+  </section>
+
+  <!-- Popular Shows -->
+  <section id="popular" class="section">
+    <h2>Popular Shows</h2>
+    <p>Must-watch series for binge lovers!</p><br><br>
+    <div class="card-container">
+      <!-- Show 1 -->
+      <div class="card">
+        <img src="https://m.media-amazon.com/images/M/MV5BMjg2NmM0MTEtYWY2Yy00NmFlLTllNTMtMjVkZjEwMGVlNzdjXkEyXkFqcGc@._V1_.jpg" alt="Show 1" />
+        <h3>Stranger Things</h3>
+        <p>Genre: Sci-Fi | Seasons: 4</p>
+        <p>In 1980s Indiana, a group of young friends witness supernatural forces and secret government exploits. As they search for answers, the children unravel a series of extraordinary mysteries.</p>
+        <label for="modal1" class="modal-btn">Learn More</label>
+        <input type="checkbox" id="modal1" class="modal-toggle" />
+        <div class="modal">
+          <div class="modal-content">
+            <p>Full description and details here...</p>
+            <a href="https://netflix.com" target="_blank">Watch Now</a>
+            <label for="modal1" class="close-modal">Close</label>
+          </div>
+        </div>
+      </div>
+      <!-- Show 2 -->
+      <div class="card">
+        <img src="https://m.media-amazon.com/images/M/MV5BMDA0NDBkMzMtOWQ0Zi00NjE1LTkxNWYtYzI0MTE0NGJjZTQ1XkEyXkFqcGc@._V1_.jpg" alt="Show 2" />
+        <h3>Squid Game</h3>
+        <p>Genre: Thriller | Seasons: 3</p>
+        <p>Hundreds of cash-strapped contestants accept an invitation to compete in children's games for a tempting prize, but the stakes are deadly.</p>
+        <label for="modal1" class="modal-btn">Learn More</label>
+        <input type="checkbox" id="modal1" class="modal-toggle" />
+        <div class="modal">
+          <div class="modal-content">
+            <p>Full description and details here...</p>
+            <a href="https://www.netflix.com/in/title/81040344?source=35&fromWatch=true" target="_blank">Watch Now</a>
+            <label for="modal1" class="close-modal">Close</label>
+          </div>
+        </div>
+      </div>
+      <!-- Show 3 -->
+      <div class="card">
+        <img src="https://m.media-amazon.com/images/M/MV5BZGQxYWFlNzgtODZjMS00YmM5LWEzZWMtOGVmODMzYjIyODZiXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt="Show 3" />
+        <h3>Wednesday</h3>
+        <p>Genre: Horror | Seasons: 2</p>
+        <p>While attending Nevermore Academy, Wednesday Addams attempts to master her emerging psychic ability, thwart a killing spree and solve the mystery that embroiled her parents 25 years ago.</p>
+        <label for="modal1" class="modal-btn">Learn More</label>
+        <input type="checkbox" id="modal1" class="modal-toggle" />
+        <div class="modal">
+          <div class="modal-content">
+            <p>Full description and details here...</p>
+            <a href="https://www.netflix.com/in/title/81231974?source=35&fromWatch=true" target="_blank">Watch Now</a>
+            <label for="modal1" class="close-modal">Close</label>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- User Reviews -->
+  <section id="reviews" class="section">
+    <h2>User Reviews</h2>
+    <div class="reviews">
+      <div class="review-card">
+        <img src="https://play-lh.googleusercontent.com/EotxkWC4dXajaesh2iVgdIB5-o6pINoas_k-z7nVjRGSu4k9QZwMZIcRNXyUWGn3rg=w240-h480-rw" alt="User 1" />
+        <h4>Anonymous</h4>
+        <p>Loved the suggestions!</p>
+      </div>
+      <div class="review-card">
+        <img src="https://play-lh.googleusercontent.com/EotxkWC4dXajaesh2iVgdIB5-o6pINoas_k-z7nVjRGSu4k9QZwMZIcRNXyUWGn3rg=w240-h480-rw" alt="User 1" />
+        <h4>Anonymous</h4>
+        <p>It's really nice to have everything in one site!</p>
+      </div>
+      <div class="review-card">
+        <img src="https://play-lh.googleusercontent.com/EotxkWC4dXajaesh2iVgdIB5-o6pINoas_k-z7nVjRGSu4k9QZwMZIcRNXyUWGn3rg=w240-h480-rw" alt="User 1" />
+        <h4>Anonymous</h4>
+        <p>Perfect place to watch movies and shows!</p>
+      </div>
+    </div><br>
+    <form class="review-form">
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea placeholder="Your Review" required></textarea>
+      <button type="submit">Submit</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="socials">
+      <a href="https://twitter.com" target="_blank">Twitter</a>
+      <a href="https://instagram.com" target="_blank">Instagram</a>
+    </div>
+    <div class="footer-links">
+      <a href="https://example.com/terms" target="_blank">Terms</a>
+      <a href="https://example.com/privacy" target="_blank">Privacy</a>
+    </div>
+    <a href="#" class="back-to-top">Back to Top</a>
+  </footer>
+</body>
+</html>
